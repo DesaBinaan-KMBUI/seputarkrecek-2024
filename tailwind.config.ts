@@ -10,7 +10,8 @@ const config: Config = {
     extend: {
       fontFamily:{
         heading: ['Clash Display','sans-serif'],
-        body: ['DM Sans','sans-serif']
+        body: ['DM Sans','sans-serif'],
+        poppins: ['Poppins','sans-serif'],
       },
       colors: {
         'white': '#ffffff',
