@@ -9,9 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily:{
-        heading: ['Clash Display','sans-serif'],
-        body: ['DM Sans','sans-serif'],
-        poppins: ['Poppins','sans-serif'],
+        ClashDisplay: 'ClashDisplay',
+        dmSans: 'var(--font-dm-sans)',
       },
       colors: {
         'white': '#ffffff',
