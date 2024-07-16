@@ -1,0 +1,6 @@
+.separator {
+  width: 0;
+  height: 0;
+  border-left: 100vw solid transparent;
+  border-bottom: 6.5vw solid #a2cd4e;
+}

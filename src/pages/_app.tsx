@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import Testimoni from "@/components/Testimoni";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
@@ -21,6 +22,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <main className={`${dmSans.variable}`}>
         <Navbar />
+        <Testimoni />
         <Component {...pageProps} />
       </main>
     </>
