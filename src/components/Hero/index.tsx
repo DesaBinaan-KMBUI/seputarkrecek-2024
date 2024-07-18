@@ -22,12 +22,15 @@ const Hero: React.FC = () => {
     setIsTransitioning(true);
     setTransitionStyle("transform 0.5s ease");
     if (direction === 'left') {
-      setCurrentIndex((prevIndex) => (prevIndex - 1));
-
+      setCurrentIndex((prevIndex) => {
+        return ((prevIndex - 1) + extendedImages.length) % extendedImages.length;
+      });
     } else {
-      setCurrentIndex((prevIndex) => (prevIndex + 1));
+      setCurrentIndex((prevIndex) => {
+        return ((prevIndex + 1) % extendedImages.length);
+      });
     }
-  };
+};
 
   const transitionEndHandler = () => {
     setIsTransitioning(false);
@@ -48,7 +51,7 @@ const Hero: React.FC = () => {
     const interval = setInterval(() => {
       if (!isTransitioning) {
         setTransitionStyle("transform 0.5s ease");
-        setCurrentIndex((prevIndex) => (prevIndex + 1));
+        setCurrentIndex((prevIndex) => ((prevIndex + 1)%extendedImages.length));
       }
 
     }, 5000);
