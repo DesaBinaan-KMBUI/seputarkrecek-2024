@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
     const interval = setInterval(() => {
       if (!isTransitioning) {
         setTransitionStyle("transform 0.5s ease");
-        setCurrentIndex((prevIndex) => (prevIndex + 1));
+        setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
       }
 
     }, 5000);
