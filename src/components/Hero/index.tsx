@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
         return ((prevIndex + 1) % extendedImages.length);
       });
     }
-};
+  };
 
   const transitionEndHandler = () => {
     setIsTransitioning(false);
@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
     const interval = setInterval(() => {
       if (!isTransitioning) {
         setTransitionStyle("transform 0.5s ease");
-        setCurrentIndex((prevIndex) => ((prevIndex + 1)%extendedImages.length));
+        setCurrentIndex((prevIndex) => ((prevIndex + 1) % extendedImages.length));
       }
 
     }, 5000);
@@ -60,8 +60,8 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative w-screen h-screen">
-      <div className="relative w-full h-full">
+    <div className="relative w-screen h-screen overflow-hidden">
+      <div className="relative w-full h-full overflow-hidden">
         <div
           className="slide w-full h-full flex"
           style={{
