@@ -83,13 +83,13 @@ const Hero: React.FC = () => {
         <div className="absolute top-1/2 -translate-y-1/2 inset-0 flex flex-col justify-center items-start ml-4 md:p-8 md:ml-14  md:mt-8">
           <div className="relative px-10 py-4 rounded-lg max-w-2xl bg-gradient-to-r backdrop-blur-sm">
             <h1 className="font-semibold text-[40px] mt-16 md:mt-0 md:text-[80px] text-white mb-4 drop-shadow-lg font-clash [text-shadow:_0px_1px_2px_rgba(0,0,0,0.9)]">
-              Lorem Ipsum
+              Dusun Krecek
             </h1>
             <p className="text-gray-200 w-[90%] md:w-full text-xl tracking-wide font-semibold mb-6 [text-shadow:_1px_1px_3px_rgba(0,0,0,0.9)] text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Destinasi kaya budaya di mana tradisi Jawa dan agama Buddha
+              berpadu. Nikmati acara adat unik seperti Kendurian dan Anjangsana.
+              Mari jelajahi kekayaan budaya Dusun Krecek dan rasakan kehangatan
+              komunitas kami!
             </p>
             <button className="bg-[#84b230] hover:bg-[#658e22] text-white font-semibold tracking-wide py-2 md:py-3 px-6 rounded-md shadow-md transition duration-300 text-lg [text-shadow:_0_1px_1px_rgba(0,0,0,0.2)]">
               See More
