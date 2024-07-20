@@ -22,7 +22,6 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <main className={`${dmSans.variable}`}>
         <Navbar />
-        <Hero />
         <Component {...pageProps} />
       </main>
     </>
