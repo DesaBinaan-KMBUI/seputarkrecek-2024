@@ -4,11 +4,11 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const Hero: React.FC = () => {
   const images = [
-    "/images/hero1.png",
-    "/images/hero2.png",
-    "/images/hero3.png",
-    "/images/hero4.png",
-    "/images/hero5.png",
+    "/images/Hero1.png",
+    "/images/Hero2.png",
+    "/images/Hero3.png",
+    "/images/Hero4.png",
+    "/images/Hero5.png",
   ];
 
   const totalImages = images.length;
