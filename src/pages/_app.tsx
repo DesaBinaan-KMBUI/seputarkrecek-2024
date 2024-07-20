@@ -4,6 +4,8 @@ import Testimoni from "@/components/Testimoni";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
+import CTASection from "@/components/CTASection";
+import Landmark from "@/components/Landmark";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -22,6 +24,8 @@ export default function App({ Component, pageProps }: AppProps) {
       <main>
         <Navbar />
         <Hero />
+        <CTASection />
+        <Landmark />
         <Testimoni />
         <Component {...pageProps} />
       </main>
