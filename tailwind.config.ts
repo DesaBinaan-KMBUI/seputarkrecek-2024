@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         clash: ["Clash Display", "sans-serif"],
-        dmSans: "var(--font-dm-sans)",
+        dm: ["DM Sans", "sans-serif"],
       },
       colors: {
         white: "#ffffff",
