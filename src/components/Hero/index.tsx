@@ -80,36 +80,36 @@ const Hero: React.FC = () => {
             </div>
           ))}
         </div>
-        <div className="absolute top-1/2 -translate-y-1/2 inset-0 flex flex-col justify-center items-start p-8 ml-14 mt-8">
+        <div className="absolute top-1/2 -translate-y-1/2 inset-0 flex flex-col justify-center items-start ml-4 md:p-8 md:ml-14  md:mt-8">
           <div className="relative px-10 py-4 rounded-lg max-w-2xl bg-gradient-to-r backdrop-blur-sm">
-            <h1 className="text-5xl  font-semibold text-[80px] text-white mb-4 drop-shadow-lg font-clash [text-shadow:_0px_1px_2px_rgba(0,0,0,0.9)]">
+            <h1 className="font-semibold text-[40px] mt-16 md:mt-0 md:text-[80px] text-white mb-4 drop-shadow-lg font-clash [text-shadow:_0px_1px_2px_rgba(0,0,0,0.9)]">
               Dusun Krecek
             </h1>
-            <p className="text-gray-200 text-xl tracking-wide font-semibold mb-6 [text-shadow:_1px_1px_3px_rgba(0,0,0,0.9)] text-justify">
+            <p className="text-gray-200 w-[90%] md:w-full text-xl tracking-wide font-semibold mb-6 [text-shadow:_1px_1px_3px_rgba(0,0,0,0.9)] text-justify">
               Destinasi kaya budaya di mana tradisi Jawa dan agama Buddha
               berpadu. Nikmati acara adat unik seperti Kendurian dan Anjangsana.
               Mari jelajahi kekayaan budaya Dusun Krecek dan rasakan kehangatan
               komunitas kami!
             </p>
-            <button className="bg-[#84b230] hover:bg-[#658e22] text-white font-semibold tracking-wide py-3 px-6 rounded-md shadow-md transition duration-300 text-lg [text-shadow:_0_1px_1px_rgba(0,0,0,0.2)]">
+            <button className="bg-[#84b230] hover:bg-[#658e22] text-white font-semibold tracking-wide py-2 md:py-3 px-6 rounded-md shadow-md transition duration-300 text-lg [text-shadow:_0_1px_1px_rgba(0,0,0,0.2)]">
               See More
             </button>
           </div>
         </div>
         <button
-          className="absolute top-1/2 -translate-y-1/2 left-4 w-10 h-10 ml-3 bg-gray-200 bg-opacity-30 rounded-full flex items-center justify-center border border-black hover:bg-opacity-50 transition-opacity"
+          className="absolute top-1/2 -translate-y-1/2 left-1 md:left-4 w-10 h-10 md:ml-3 bg-gray-200 bg-opacity-30 rounded-full flex items-center justify-center border border-black hover:bg-opacity-50 transition-opacity"
           onClick={() => moveHandler("left")}
         >
           <ChevronLeft />
         </button>
         <button
-          className="absolute top-1/2 -translate-y-1/2 right-4 w-10 h-10 mr-5 bg-gray-200 bg-opacity-30 rounded-full flex items-center justify-center border border-black hover:bg-opacity-50 transition-opacity"
+          className="absolute top-1/2 -translate-y-1/2 right-1 md:right-4 w-10 h-10 mr-4 xl:mr-5 bg-gray-200 bg-opacity-30 rounded-full flex items-center justify-center border border-black hover:bg-opacity-50 transition-opacity"
           onClick={() => moveHandler("right")}
         >
           <ChevronRight />
         </button>
 
-        <div className="absolute bottom-8 w-full flex justify-center space-x-5">
+        <div className="absolute bottom-2 md:bottom-8 w-full flex justify-center space-x-5">
           {images.map((_, index) => (
             <button
               key={index}
