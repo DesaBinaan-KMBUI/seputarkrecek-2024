@@ -22,7 +22,7 @@ export default function App({ Component, pageProps }: AppProps) {
           rel="stylesheet"
         />
       </Head>
-      <main>
+      <main className="bg-white min-h-screen">
         <Navbar />
         <Hero />
         <CTASection />
