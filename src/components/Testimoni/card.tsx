@@ -1,5 +1,5 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
 interface TestimoniCardProps {
   imageSrc: string;
@@ -9,8 +9,13 @@ interface TestimoniCardProps {
   testimonial: string;
 }
 
-
-const TestimoniCard: React.FC<TestimoniCardProps> = ({ imageSrc, rating, name, institution, testimonial }) => {
+const TestimoniCard: React.FC<TestimoniCardProps> = ({
+  imageSrc,
+  rating,
+  name,
+  institution,
+  testimonial,
+}) => {
   return (
     <div className="relative w-full h-60">
       <Image
@@ -32,9 +37,11 @@ const TestimoniCard: React.FC<TestimoniCardProps> = ({ imageSrc, rating, name, i
           <p className="text-xs sm:text-sm font-semibold">{rating}</p>
         </div>
 
-        <h1 className="text-base sm:text-xl font-bold mb-2">{name}</h1>
-        <p className="text-xs sm:text-sm font-bold mb-1">{institution}</p>
-        <p className="text-xs sm:text-sm">
+        <h1 className="text-3xl font-semibold font-clash mb-2">{name}</h1>
+        <p className="text-lg font-bold font-dm tracking-wide mb-1">
+          {institution}
+        </p>
+        <p className="text-xs sm:text-sm font-dm tracking-wide">
           &quot;{testimonial}&quot;
         </p>
       </div>
