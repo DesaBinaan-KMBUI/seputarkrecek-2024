@@ -6,13 +6,11 @@ const Testimoni: React.FC = () => {
   return (
     <section>
       <div className="py-32">
-        <h1 className="px-24 text-deep-cove-900 font-bold text-3xl md:text-5xl justify-center flex">
+        <h1 className="font-semibold text-deep-cove-900 font-clash text-center text-[80px] justify-center flex">
           Kata mereka tentang Dusun Krecek
         </h1>
 
-        {/* Testimoni Cards */}
         <div className="flex flex-col md:flex-row md:gap-10 px-24 pt-12 mb-[-80px]">
-          {/* Left */}
           <div className="flex flex-col gap-10 md:w-1/2">
             <TestimoniCard
               imageSrc="/images/img.png"
@@ -58,11 +56,7 @@ const Testimoni: React.FC = () => {
 
         <div className={styles.separator}></div>
         <div className="flex px-24 pt-20 pb-28 bg-conifer-400 gap-10 items-center">
-          {" "}
-          {/* Maps Section */}
           <div className="text-white">
-            {" "}
-            {/* Container Kalimat */}
             <h1 className="pb-2 text-2xl sm:text-3xl md:text-5xl font-bold">
               Tertarik ke Dusun Krecek?
             </h1>
