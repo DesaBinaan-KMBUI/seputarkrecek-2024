@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import { Analytics } from "@vercel/analytics/react";
 import Testimoni from "@/components/Testimoni";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
@@ -27,6 +28,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <CTASection />
         <Landmark />
         <Testimoni />
+        <Analytics />
         <Component {...pageProps} />
       </main>
     </>
