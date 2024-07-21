@@ -24,11 +24,11 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <main className="bg-white min-h-screen">
         <Navbar />
-        <Hero />
-        <CTASection />
+        {/* <Hero /> */}
+        {/* <CTASection />
         <Landmark />
         <Testimoni />
-        <Analytics />
+        <Analytics /> */}
         <Component {...pageProps} />
       </main>
     </>
