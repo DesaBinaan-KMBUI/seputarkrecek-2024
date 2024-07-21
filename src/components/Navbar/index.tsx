@@ -60,7 +60,7 @@ const Navbar: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="px-4 md:px-12 py-5 flex xl:hidden items-center fixed w-full bg-white z-50">
+      <div className="px-4 md:px-12 py-2 md:py-5 flex xl:hidden items-center fixed w-full bg-white z-50">
         <div className="flex  w-full my-4">
           <div className="flex xl:hidden justify-center w-full items-center h-9 transition-all duration-500 ease-in-out">
             <Link href="/">

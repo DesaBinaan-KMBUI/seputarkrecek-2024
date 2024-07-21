@@ -1,10 +1,9 @@
 export default function LandmarkCard() {
   return (
-    // Adjust padding for smaller screens
     <div className="flex justify-center items-center p-4 md:p-10">
       <div
         className="flex justify-center items-center 
-                      flex-wrap md:flex-nowrap px-4 md:px-40 gap-2 md:gap-5 w-1/2 xl:w-2/3"
+                      flex-wrap md:flex-nowrap px-4 md:px-40 gap-8 md:gap-5 w-1/2 xl:w-2/3"
       >
         <CardElement />
         <CardElement />

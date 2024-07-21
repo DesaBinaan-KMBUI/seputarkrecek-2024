@@ -7,14 +7,14 @@ export default function CTASection() {
         <h1 className="font-clash font-semibold text-6xl md:text-[80px] text-blue-900 leading-tight md:leading-[89.60px]">
           Yuk kenali Dusun Krecek!
         </h1>
-        <p className="text-deep-cove-900 tracking-wide mt-4 mb-12 font-dm text-base md:text-2xl">
+        <p className="text-deep-cove-900 tracking-wide mt-4 mb-8 md:mb-12 font-dm text-base md:text-2xl">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </p>
       </div>
-      <div className="w-3/4 md:w-8/12 xl:w-1/2 relative mt-10 md:mt-4">
+      <div className="w-full md:w-3/4  xl:w-1/2 relative md:mt-4">
         <Image
           src="/images/CTA.png"
           width={1173}
