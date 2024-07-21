@@ -18,7 +18,7 @@ export default function Bottom() {
                                 alt="" />
                         </div>
 
-                        <h5 className="text-lg text-blue-900">{item.name}</h5>
+                        <h5 className="text-lg text-blue-900 font-clash font-medium">{item.name}</h5>
                     </div>
                 </div>
             ))}

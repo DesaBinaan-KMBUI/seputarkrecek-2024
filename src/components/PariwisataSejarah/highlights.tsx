@@ -3,11 +3,13 @@ export default function Highlights() {
     <div className="relative w-full h-full">
 
         {/* Name  */}
-        <h1 className="py-20 px-24 text-deep-cove-900 font-bold text-3xl md:text-5xl justify-center flex">Ada apa saja di Dusun Krecek</h1>
+        <h1 className="font-semibold text-deep-cove-900 font-clash text-center text-[80px] leading-[85px] justify-center flex">
+            Ada apa saja di <br/>Dusun Krecek
+        </h1>
         
         {/* Contents */}
-        <section className="grid grid-cols-2">
-            <div className="px-10 py-20 bg-gradient-to-tr from-lime-700 via-lime-600 to-lime-500 text-white text-right">
+        <section className="grid grid-cols-2 mt-10 font-clash">
+            <div className="text-lg px-10 py-20 bg-gradient-to-l from-lime-500 to-lime-700 text-white text-right">
                 LOREM IPSUM
 
                 <h1 className="my-3 font-bold text-5xl">
@@ -20,13 +22,19 @@ export default function Highlights() {
                 nisi ut aliquip ex ea commodo consequat.
             </div>
             <div className="bg-gradient-to-tr from-lime-500 via-lime-300 to-lime-100">
-                [GAMBAR]
+                <img
+                    className="h-full w-full object-cover"
+                    src="/images/Hero3.png"
+                    alt="curug" />
             </div>
 
             <div className="bg-gradient-to-tr from-lime-100 via-lime-300 to-lime-500">
-                [GAMBAR]
+                <img
+                    className="h-full w-full object-cover"
+                    src="/images/Hero3.png"
+                    alt="vihara" />
             </div>
-            <div className="px-10 py-20 bg-gradient-to-bl from-lime-700 via-lime-600 to-lime-400 text-white text-left">
+            <div className="text-lg px-10 py-20 bg-gradient-to-l from-lime-700 to-lime-500 text-white text-left">
                 LOREM IPSUM
                 
                 <h1 className="my-3 font-bold text-5xl">
@@ -39,7 +47,7 @@ export default function Highlights() {
                 nisi ut aliquip ex ea commodo consequat.
             </div>
 
-            <div className="px-10 py-20 bg-gradient-to-tr from-lime-700 via-lime-600 to-lime-500 text-white text-right">
+            <div className="text-lg px-10 py-20 bg-gradient-to-l from-lime-500 to-lime-700 text-white text-right">
                 LOREM IPSUM
 
                 <h1 className="my-3 font-bold text-5xl">
@@ -53,13 +61,19 @@ export default function Highlights() {
                 nisi ut aliquip ex ea commodo consequat.
             </div>
             <div className="bg-gradient-to-tr from-lime-500 via-lime-300 to-lime-100">
-                [GAMBAR]
+                <img
+                    className="h-full w-full object-cover"
+                    src="/images/Hero3.png"
+                    alt="kuda-lumping" />
             </div>
 
             <div className="bg-gradient-to-tr from-lime-100 via-lime-300 to-lime-500">
-                [GAMBAR]
+                <img
+                    className="h-full w-full object-cover"
+                    src="/images/Hero3.png"
+                    alt="tarian-horotoyo" />
             </div>
-            <div className="px-10 py-20 bg-gradient-to-bl from-lime-700 via-lime-600 to-lime-400 text-white text-left">
+            <div className="text-lg px-10 py-20 bg-gradient-to-l from-lime-700 to-lime-500 text-white text-left">
                 LOREM IPSUM
 
                 <h1 className="my-3 font-bold text-5xl">
