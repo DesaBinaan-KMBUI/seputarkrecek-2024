@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import dynamic from "next/dynamic";
 import { config } from "react-spring";
 import Image from "next/image";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Images } from "lucide-react";
 import CarouselCard from "@/components/Carousel3D/card";
 
 const Carousel = dynamic(() => import("@/components/Carousel3D"), {
@@ -76,7 +76,7 @@ const ProdukPangan = () => {
 
                     <div className="absolute top-1/2 -translate-y-1/2 inset-0 flex flex-col justify-center items-start ml-4 md:p-8 md:ml-14 md:mt-8">
                         <div className="relative px-10 py-4 rounded-lg max-w-2xl bg-gradient-to-r backdrop-blur-sm">
-                            <h1 className="font-semibold text-[55px] mt-16 text-white mb-4 drop-shadow-lg font-clash [text-shadow:_0px_1px_2px_rgba(0,0,0,0.9)]">
+                            <h1 className="font-semibold text-[32px] md:text-[55px] mt-16 text-white mb-4 drop-shadow-lg font-clash [text-shadow:_0px_1px_2px_rgba(0,0,0,0.9)]">
                                 Komoditas Pangan & Produk UMKM Dusun Krecek
                             </h1>
 
@@ -95,23 +95,23 @@ const ProdukPangan = () => {
                 </div>
             </section>
 
-            <section className="flex flex-col gap-y-52  min-h-5xl my-16 justify-between items-center text-center">
-                <div className="mb-28">
-                    <h1 className="text-[80px] font-clash text-deep-cove-900 font-semibold">
+            <section className="flex flex-col gap-y-52  min-h-5xl my-10 md:my-16 justify-center items-center text-center">
+                <div className="mb-14 md:mb-28 px-4">
+                    <h1 className="text-[40px] md:text-[80px] font-clash text-deep-cove-900 font-semibold">
                         Komoditas Pangan
                     </h1>
-                    <h1 className="text-[80px] font-clash text-deep-cove-900 font-semibold">
+                    <h1 className="text-[40px] md:text-[80px] font-clash text-deep-cove-900 font-semibold">
                         Dusun Krecek
                     </h1>
                 </div>
-                <div className="flex justify-between w-3/4 mb-28 ">
+                <div className="flex justify-center bg-red-300 px-4 w-3/4 mb-14 md:mb-28 ">
                     <button
-                        className=" bg-gray-200 bg-opacity-30 p-2 rounded-full flex items-center justify-center border border-black hover:bg-opacity-50 transition-opacity"
+                        className=" absolute left-3 md:left-4 xl:left-44 bg-gray-200 bg-opacity-30 p-2 rounded-full flex items-center justify-center border border-black hover:bg-opacity-50 transition-opacity"
                         onClick={swipeLeft}
                     >
                         <ChevronLeft />
                     </button>
-                    <div className="w-3/4 ">
+                    <div className=" w-full md:w-5/6 xl:w-3/4 ">
                         <Carousel
                             slides={slides}
                             goToSlide={goToSlide}
@@ -123,17 +123,17 @@ const ProdukPangan = () => {
                     </div>
 
                     <button
-                        className=" bg-gray-200 bg-opacity-30 p-2 rounded-full flex items-center justify-center border border-black hover:bg-opacity-50 transition-opacity"
+                        className=" absolute right-3 md:right-4 xl:right-44 bg-gray-200 bg-opacity-30 p-2 rounded-full flex items-center justify-center border border-black hover:bg-opacity-50 transition-opacity"
                         onClick={swipeRight}
                     >
                         <ChevronRight />
                     </button>
                 </div>
-                <div className="flex justify-center flex-col text-center items-center">
-                    <h1 className="text-[80px] font-clash text-deep-cove-900 font-semibold">
+                <div className="flex justify-center flex-col  items-center">
+                    <h1 className="text-[40px] md:text-[80px] font-clash text-deep-cove-900 font-semibold">
                         Lorem Ipsum
                     </h1>
-                    <h1 className="w-[66%] text-[24px] font-dm text-deep-cove-900 font-normal">
+                    <h1 className="w-[80%] md:w-[66%] text-[24px] font-dm text-deep-cove-900 font-normal text-center">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                         ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -142,7 +142,7 @@ const ProdukPangan = () => {
                 </div>
             </section>
 
-            <section className="grid grid-cols-2 mt-10 font-clash w-full h-full">
+            <section className="grid grid-cols-1 md:grid-cols-2 my-10 md:my-6  font-clash w-full h-full">
                 <div className="text-lg px-10 py-20 bg-gradient-to-l from-lime-500 to-lime-700 text-white text-left">
                     LOREM IPSUM
                     <h1 className="my-3 font-bold text-5xl">Kopi Kinasih</h1>
@@ -160,15 +160,15 @@ const ProdukPangan = () => {
                 </div>
             </section>
 
-            <section className="flex flex-col my-16 w-full items-center text-center">
-                <div className="mb-16">
-                    <h1 className="text-[80px] font-clash text-deep-cove-900 font-semibold">
+            <section className="flex relative overflow-hidden flex-col mt-20 md:mt-4 pb-20 w-full items-center text-center ">
+                <div className="mb-14 md:mb-20 px-4">
+                    <h1 className="text-[40px] md:text-[80px] font-clash text-deep-cove-900 font-semibold">
                         UMKM Dusun Krecek
                     </h1>
                 </div>
 
-                <div className="flex w-full justify-center items-center">
-                    <div className="grid grid-cols-4 gap-16  justify-center">
+                <div className="flex z-40">
+                    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-16">
                         {items.map((item, index) => (
                             <div
                                 key={index}
@@ -190,7 +190,7 @@ const ProdukPangan = () => {
                                         <h1 className="leading-[30px]">{item.price}</h1>
                                     </div>
 
-                                    <button className="bg-conifer-600 px-10 py-2 text-white font-clash rounded-lg">
+                                    <button className="bg-conifer-600 px-10 py-2 text-white font-dm font-semibold rounded-lg">
                                         Beli
                                     </button>
                                 </div>
@@ -199,7 +199,19 @@ const ProdukPangan = () => {
                     </div>
                 </div>
 
+                <div className="absolute bottom-[-50px] md:bottom-[-70px] xl:bottom-[-150px] left-0 w-full">
+                    <Image
+                        src="/wavy.svg"
+                        alt="hero"
+                        layout="responsive"
+                        width={1000}
+                        height={300}
+                        className="object-cover"
+                    />
+                </div>
             </section>
+
+
         </div>
     );
 };
