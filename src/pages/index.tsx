@@ -1,7 +1,17 @@
+import Hero from "@/components/Hero";
+import Testimoni from "@/components/Testimoni";
+import CTASection from "@/components/CTASection";
+import Landmark from "@/components/Landmark";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center ">
-      
+    <main>
+
+      <Hero />
+      <CTASection />
+      <Landmark />
+      <Testimoni />
+
     </main>
   );
 }
