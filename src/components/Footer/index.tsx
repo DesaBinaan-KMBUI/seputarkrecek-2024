@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
                         <h2 className="font-bold text-lg text-deep-cove-900">YouTube</h2>
                         <ul className="mt-4 space-y-2 text-deep-cove-900">
                             <li className="flex items-center space-x-2">
-                                <a href="https://www.youtube.com/c/KampungBudayaKrecek" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2">
+                                <a href="https://www.youtube.com/@kampungbudayakrecek1858" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2">
                                     <div className="flex items-center justify-center w-6 h-6">
                                         <FaYoutube size={24} />
                                     </div>
