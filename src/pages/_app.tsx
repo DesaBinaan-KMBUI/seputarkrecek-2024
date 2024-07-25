@@ -1,13 +1,10 @@
 import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import { Analytics } from "@vercel/analytics/react";
-import Testimoni from "@/components/Testimoni";
+
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import CTASection from "@/components/CTASection";
-import Landmark from "@/components/Landmark";
-import Footer from '@/components/Footer';
+
+import { Analytics } from "@vercel/analytics/react";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -25,11 +22,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <main className="bg-white min-h-screen">
         <Navbar />
-        {/* <Hero /> */}
-        {/* <CTASection />
-        <Landmark />
-        <Testimoni />
-        <Analytics /> */}
+        <Analytics />
         <Component {...pageProps} />
         <Footer/>
       </main>
