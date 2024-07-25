@@ -7,6 +7,7 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import CTASection from "@/components/CTASection";
 import Landmark from "@/components/Landmark";
+import Footer from '@/components/Footer';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -30,6 +31,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <Testimoni />
         <Analytics /> */}
         <Component {...pageProps} />
+        <Footer/>
       </main>
     </>
   );
