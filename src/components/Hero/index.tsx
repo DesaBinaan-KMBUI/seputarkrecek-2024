@@ -86,7 +86,7 @@ const Hero: React.FC = () => {
             <h1 className="font-semibold text-[40px] mt-16 md:mt-0 md:text-[80px] text-white mb-4 drop-shadow-lg font-clash [text-shadow:_0px_1px_2px_rgba(0,0,0,0.9)]">
               Dusun Krecek
             </h1>
-            <p className="text-gray-200 w-[90%] md:w-full text-xl tracking-wide font-semibold mb-6 [text-shadow:_1px_1px_3px_rgba(0,0,0,0.9)] text-justify">
+            <p className="text-gray-200 w-[90%] md:w-full text-lg md:text-xl tracking-wide font-semibold mb-6 [text-shadow:_1px_1px_3px_rgba(0,0,0,0.9)] text-justify">
               Destinasi kaya budaya di mana tradisi Jawa dan agama Buddha
               berpadu. Nikmati acara adat unik seperti Kendurian dan Anjangsana.
               Mari jelajahi kekayaan budaya Dusun Krecek dan rasakan kehangatan
