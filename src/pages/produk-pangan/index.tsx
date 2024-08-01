@@ -143,7 +143,7 @@ const ProdukPangan = () => {
             </section>
 
             <section className="grid grid-cols-1 md:grid-cols-2 my-10 md:my-6  font-clash w-full h-full">
-                <div className="text-lg px-10 py-20 bg-gradient-to-l from-lime-500 to-lime-700 text-white text-left">
+                <div className="text-lg px-4 md:px-10 py-20 bg-gradient-to-l from-lime-500 to-lime-700 text-white text-left">
                     LOREM IPSUM
                     <h1 className="my-3 font-bold text-5xl">Kopi Kinasih</h1>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -154,7 +154,7 @@ const ProdukPangan = () => {
                 <div className="bg-gradient-to-tr from-lime-500 via-lime-300 to-lime-100">
                     <img
                         className="h-full w-full object-cover"
-                        src="/images/Hero3.png"
+                        src="/images/produk-pangan/kopi-kinasih.png"
                         alt="kopi"
                     />
                 </div>
