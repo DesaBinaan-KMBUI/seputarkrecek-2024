@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export default function PariwisataSejarahHero() {
-  const images = "/images/Hero1.png";
+  const images = "/images/pariwisata-sejarah/Hero.jpg";
 
   return (
     <div className="relative w-screen h-screen overflow-hidden mb-10">

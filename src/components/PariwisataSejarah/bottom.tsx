@@ -1,9 +1,9 @@
 export default function Bottom() {
     const items= [
-        { "name": "Gamelan", "image": "/images/Hero2.png" },
-        { "name": "Gamelan", "image": "/images/Hero2.png" },
-        { "name": "Gamelan", "image": "/images/Hero2.png" },
-        { "name": "Gamelan", "image": "/images/Hero2.png" }
+        { "name": "Gamelan", "image": "/images/pariwisata-sejarah/card/Gamelan.jpg" },
+        { "name": "Gendurian", "image": "/images/pariwisata-sejarah/card/Gendurian.jpg" },
+        { "name": "Pendopo & Sekolah", "image": "/images/pariwisata-sejarah/card/Pendopo-Sekolah.jpg" },
+        { "name": "Pondok Meditasi", "image": "/images/pariwisata-sejarah/card/Pondok-Meditasi.jpg" }
     ]
 
     return (
