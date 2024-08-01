@@ -23,14 +23,14 @@ export default function Highlights() {
             <div className="bg-gradient-to-tr from-lime-500 via-lime-300 to-lime-100 mb-5 md:mb-0">
                 <img
                     className="h-full w-full object-cover"
-                    src="/images/Hero3.png"
+                    src="/images/pariwisata-sejarah/highlights/Curug.jpg"
                     alt="curug" />
             </div>
 
             <div className="bg-gradient-to-tr from-lime-100 via-lime-300 to-lime-500">
                 <img
                     className="h-full w-full object-cover"
-                    src="/images/Hero3.png"
+                    src="/images/pariwisata-sejarah/highlights/Vihara.JPG"
                     alt="vihara" />
             </div>
             <div className="text-lg px-10 py-20 bg-gradient-to-l from-lime-700 to-lime-500 text-white text-left mb-5 md:mb-0">
@@ -55,14 +55,14 @@ export default function Highlights() {
             <div className="bg-gradient-to-tr from-lime-500 via-lime-300 to-lime-100 mb-5 md:mb-0">
                 <img
                     className="h-full w-full object-cover"
-                    src="/images/Hero3.png"
+                    src="/images/pariwisata-sejarah/highlights/Kuda-Lumping.jpg"
                     alt="kuda-lumping" />
             </div>
 
             <div className="bg-gradient-to-tr from-lime-100 via-lime-300 to-lime-500">
                 <img
                     className="h-full w-full object-cover"
-                    src="/images/Hero3.png"
+                    src="/images/pariwisata-sejarah/highlights/Horotoyo.JPG"
                     alt="tarian-horotoyo" />
             </div>
             <div className="text-lg px-10 py-20 bg-gradient-to-l from-lime-700 to-lime-500 text-white text-left">
