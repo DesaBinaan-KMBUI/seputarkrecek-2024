@@ -2,7 +2,12 @@ import Image from "next/image";
 
 export default function PariwisataSejarahHero() {
   const images = "/images/pariwisata-sejarah/Hero.jpg";
-
+  const scrollToTarget = () => {
+    const target = document.getElementById("pariwisata");
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div className="relative w-screen h-screen overflow-hidden mb-10">
       <div className="relative w-full h-full overflow-hidden">
@@ -25,12 +30,9 @@ export default function PariwisataSejarahHero() {
               Pariwisata & Sejarah Dusun Krecek
             </h1>
             <p className="text-gray-200 w-[90%] md:w-full text-lg md:text-xl tracking-wide font-semibold mb-6 [text-shadow:_1px_1px_3px_rgba(0,0,0,0.9)] text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+            Dusun Krecek adalah permata wisata tersembunyi yang menawarkan keindahan alam dan ketenangan pedesaan. Terletak jauh dari hiruk-pikuk kota, dusun ini memiliki sejarah unik, dari mayoritas Islam hingga kini sepenuhnya beragama Buddha, menciptakan daya tarik tersendiri dalam keragaman budaya dan spiritualitas.
             </p>
-            <button className="bg-[#84b230] hover:bg-[#658e22] text-white font-semibold tracking-wide py-2 md:py-3 px-6 rounded-md shadow-md transition duration-300 text-lg [text-shadow:_0_1px_1px_rgba(0,0,0,0.2)]">
+            <button onClick={scrollToTarget} className="bg-[#A17858] hover:bg-[#2F2014] text-white font-semibold tracking-wide py-2 md:py-3 px-6 rounded-md shadow-md transition duration-300 text-lg [text-shadow:_0_1px_1px_rgba(0,0,0,0.2)]">
               See More
             </button>
           </div>

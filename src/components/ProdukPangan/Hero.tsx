@@ -1,7 +1,13 @@
 import Image from "next/image";
 const HeroProdukPangan = () => {
+    const scrollToTarget = () => {
+        const target = document.getElementById("komoditas");
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth" });
+        }
+      };
     return (
-        <section className="relative w-screen h-screen overflow-hidden">
+        <section className="bg-[#relative w-screen h-screen overflow-hidden">
         <div className="relative w-full h-full overflow-hidden">
             <div className="slide w-full h-full flex">
                 <div className="w-full h-full flex-shrink-0 relative">
@@ -28,7 +34,7 @@ const HeroProdukPangan = () => {
                         nisi ut aliquip ex ea commodo consequat.
                     </p>
 
-                    <button className="bg-[#84b230] hover:bg-[#658e22] text-white font-semibold tracking-wide py-2 md:py-3 px-6 rounded-md shadow-md transition duration-300 text-lg [text-shadow:_0_1px_1px_rgba(0,0,0,0.2)]">
+                    <button onClick={scrollToTarget} className="bg-[#A17858] hover:bg-[#2F2014] text-white font-semibold tracking-wide py-2 md:py-3 px-6 rounded-md shadow-md transition duration-300 text-lg [text-shadow:_0_1px_1px_rgba(0,0,0,0.2)]">
                         See More
                     </button>
                 </div>

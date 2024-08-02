@@ -5,7 +5,7 @@ const Bottom = ({ items }: { items: CardProps[] }) => {
     return (
         <section className="flex relative overflow-hidden flex-col mt-8 md:mt-4 pb-20 w-full items-center text-center">
             <div className="mb-14 md:mb-20 px-4">
-                <h1 className="text-[40px] md:text-[80px] font-clash text-deep-cove-900 font-semibold">
+                <h1 className="text-[40px] md:text-[80px] font-clash text-[#8D804F] font-semibold">
                     UMKM Dusun Krecek
                 </h1>
             </div>
@@ -28,7 +28,7 @@ const Bottom = ({ items }: { items: CardProps[] }) => {
                                     />
                                 </div>
 
-                                <div className="font-clash text-deep-cove-900 font-semibold text-left">
+                                <div className="font-clash text-[#2F2014] font-semibold text-left">
                                     <h1 className="leading-[30px]">{item.name}</h1>
                                 </div>
 
@@ -36,7 +36,7 @@ const Bottom = ({ items }: { items: CardProps[] }) => {
                                     href="https://wa.me/6287776073898"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="bg-conifer-600 px-10 py-2 text-white font-dm font-semibold rounded-lg text-center"
+                                    className="bg-[#2F2014] px-10 py-2 text-white font-dm font-semibold rounded-lg text-center"
                                 >
                                     Contact Us
                                 </a>

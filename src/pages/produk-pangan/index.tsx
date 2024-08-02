@@ -80,20 +80,20 @@ const ProdukPangan = () => {
     };
 
     return (
-        <div className="flex min-h-screen flex-col ">
+        <div className="bg-[#F6ECE3] flex min-h-screen flex-col ">
             <HeroProdukPangan />
 
-            <section className="flex flex-col gap-y-52 min-h-5xl my-10 md:my-16 justify-center items-center text-center">
+            <section id="komoditas"  className="flex  flex-col gap-y-52 min-h-5xl my-10 md:my-16 justify-center items-center text-center">
                 <div className="mb-14 md:mb-28 px-4">
-                    <h1 className="text-[40px] md:text-[80px] font-clash text-deep-cove-900 font-semibold">
+                    <h1 className="text-[40px] md:text-[80px] font-clash text-[#8D804F] font-semibold">
                         Komoditas Pangan
                     </h1>
-                    <h1 className="text-[40px] md:text-[80px] font-clash text-deep-cove-900 font-semibold">
+                    <h1 className="text-[40px] md:text-[80px] font-clash text-[#8D804F] font-semibold">
                         Dusun Krecek
                     </h1>
                 </div>
 
-                <div className="relative flex justify-center w-full  mb-14 md:mb-28">
+                <div  className="relative flex justify-center w-full  mb-14 md:mb-28">
                     <div className="flex flex-row justify-between px-2 md:px-4 w-full md:w-[80%]">
 
                         <button
@@ -125,10 +125,10 @@ const ProdukPangan = () => {
                 </div>
 
                 <div className="flex w-full justify-center flex-col items-center">
-                    <h1 className="text-[40px] md:text-[80px] font-clash text-deep-cove-900 font-semibold">
+                    <h1 className="text-[40px] md:text-[80px] font-clash text-[#8D804F] font-semibold">
                         {dataCarousel[goToSlide].title}
                     </h1>
-                    <h1 className="w-[80%] md:w-[66%] text-[24px] font-dm text-deep-cove-900 font-normal text-center">
+                    <h1 className="w-[80%] md:w-[66%] text-[24px] font-dm text-[#8D804F] font-normal text-center">
                         {dataCarousel[goToSlide].description}
                     </h1>
                 </div>
@@ -136,7 +136,7 @@ const ProdukPangan = () => {
 
 
             <section className="grid grid-cols-1 md:grid-cols-2 my-10 md:my-6 font-clash w-full h-full">
-                <div className="text-lg px-4 md:px-10 py-16 md:py-20 bg-gradient-to-l from-lime-500 to-lime-700 text-white text-left">
+                <div className="text-lg px-4 md:px-10 py-16 md:py-20 gradient-background text-white text-left">
                     <p>Produk Unggulan</p>
                     <h1 className="my-3 font-bold text-5xl">Kopi Kinasih</h1>
                     <p>Kopi Kinasih merupakan salah satu kopi robusta yang diolah langsung dari Dusun Krecek, Temanggung, Jawa Tengah. Dibuat dengan bijih kopi pilihan, cita rasa kopi kinasih pun bervariasi tergantung dari cara pengolahan biji kopi pasca panen. Ada yang mempunyai rasa yang cenderung manis dan seperti coklat, rasa yang agak asam seperti wine, rasa seperti buah beri ataupun kombinasi dari beberapa macam rasa yang seimbang.</p>
@@ -150,7 +150,7 @@ const ProdukPangan = () => {
                         <li>Wine → 37k</li>
                     </ul>
                 </div>
-                <div className="relative w-full h-64 md:h-full bg-gradient-to-tr from-lime-500 via-lime-300 to-lime-100">
+                <div className="relative w-full h-[328px] md:h-full bg-gradient-to-tr from-lime-500 via-lime-300 to-lime-100">
                     <Image
                         src="/images/produk-pangan/kopi-kinasih.png"
                         alt="Kopi Kinasih"

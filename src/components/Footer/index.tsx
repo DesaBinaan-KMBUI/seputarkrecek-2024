@@ -18,8 +18,8 @@ const Footer: React.FC = () => {
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                     <div className="col-span-1">
-                        <h2 className="font-bold text-lg text-deep-cove-900">Contact Person</h2>
-                        <ul className="mt-4 space-y-2 text-deep-cove-900">
+                        <h2 className="font-bold text-lg text-[#8D804F]">Contact Person</h2>
+                        <ul className="mt-4 space-y-2 text-[#8D804F]">
                             <li className="flex items-center space-x-2">
                                 <a href="https://wa.me/6287776073898" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2">
                                     <div className="flex items-center justify-center w-6 h-6">
@@ -31,8 +31,8 @@ const Footer: React.FC = () => {
                         </ul>
                     </div>
                     <div className="col-span-1">
-                        <h2 className="font-bold text-lg text-deep-cove-900">Social Media</h2>
-                        <ul className="mt-4 space-y-2 text-deep-cove-900">
+                        <h2 className="font-bold text-lg text-[#8D804F]">Social Media</h2>
+                        <ul className="mt-4 space-y-2 text-[#8D804F]">
                             <li className="flex items-center space-x-2">
                                 <a href="https://www.instagram.com/seputar_krecek" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2">
                                     <div className="flex items-center justify-center w-6 h-6">
@@ -60,8 +60,8 @@ const Footer: React.FC = () => {
                         </ul>
                     </div>
                     <div className="col-span-1">
-                        <h2 className="font-bold text-lg text-deep-cove-900">YouTube</h2>
-                        <ul className="mt-4 space-y-2 text-deep-cove-900">
+                        <h2 className="font-bold text-lg text-[#8D804F]">YouTube</h2>
+                        <ul className="mt-4 space-y-2 text-[#8D804F]">
                             <li className="flex items-center space-x-2">
                                 <a href="https://www.youtube.com/@kampungbudayakrecek1858" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2">
                                     <div className="flex items-center justify-center w-6 h-6">

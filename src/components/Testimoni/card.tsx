@@ -16,6 +16,14 @@ const TestimoniCard: React.FC<TestimoniCardProps> = ({
   institution,
   testimonial,
 }) => {
+  const testimonialLines = testimonial.trim().split('\n');
+  const formattedTestimonial = testimonialLines.map((line, index) => (
+    <React.Fragment key={index}>
+      {line}
+      {index !== testimonialLines.length - 1 && <br />}
+    </React.Fragment>
+  ));
+
   return (
     <div className="relative w-full h-60">
       <Image
@@ -42,7 +50,7 @@ const TestimoniCard: React.FC<TestimoniCardProps> = ({
           {institution}
         </p>
         <p className="text-xs sm:text-sm font-dm tracking-wide">
-          &quot;{testimonial}&quot;
+          &quot;{formattedTestimonial}&quot;
         </p>
       </div>
     </div>

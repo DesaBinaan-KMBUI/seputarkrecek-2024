@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
                     <button
                       className={
                         router.asPath === href
-                          ? "font-dmSans font-bold text-lg text-[16px] text-deep-cove-900"
+                          ? "font-dmSans font-bold text-lg text-[16px] text-[#2F2014]"
                           : "font-dmSans font-bold text-lg text-[16px] text-[#9CA3AF]"
                       }
                       onClick={toggleHamburger}
@@ -100,7 +100,7 @@ const Navbar: React.FC = () => {
                       <button
                         className={
                           router.asPath === href
-                            ? "font-dmSans font-semibold text-[16px] text-deep-cove-900"
+                            ? "font-dmSans font-semibold text-[16px] text-[#2F2014]"
                             : "font-dmSans text-[16px] text-gray-400"
                         }
                         onClick={toggleHamburger}

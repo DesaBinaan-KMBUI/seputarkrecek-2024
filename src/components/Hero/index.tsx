@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 
 const Hero: React.FC = () => {
   const images = [
-    "/images/Hero1.png",
-    "/images/Hero2.png",
-    "/images/Hero3.png",
-    "/images/Hero4.png",
-    "/images/Hero5.png",
+    "/images/Hero1.jpg",
+    "/images/Hero2.jpg",
+    "/images/Hero3.jpg",
+    "/images/Hero4.jpg",
+    "/images/Hero5.jpg",
   ];
 
   const totalImages = images.length;
@@ -18,6 +18,7 @@ const Hero: React.FC = () => {
   const [transitionStyle, setTransitionStyle] = useState("transform 0.5s ease");
   const [isTransitioning, setIsTransitioning] = useState(false);
 
+  
   const moveHandler = (direction: string) => {
     if (isTransitioning) return;
     setIsTransitioning(true);
@@ -44,6 +45,13 @@ const Hero: React.FC = () => {
     if (currentIndex === extendedImages.length - 1) {
       setCurrentIndex(1);
       setTransitionStyle("none");
+    }
+  };
+
+  const scrollToTarget = () => {
+    const target = document.getElementById("yuk-kenali");
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -92,7 +100,7 @@ const Hero: React.FC = () => {
               Mari jelajahi kekayaan budaya Dusun Krecek dan rasakan kehangatan
               komunitas kami!
             </p>
-            <button className="bg-[#84b230] hover:bg-[#658e22] text-white font-semibold tracking-wide py-2 md:py-3 px-6 rounded-md shadow-md transition duration-300 text-lg [text-shadow:_0_1px_1px_rgba(0,0,0,0.2)]">
+            <button onClick={scrollToTarget} className="bg-[#A17858] hover:bg-[#2F2014] text-white font-semibold tracking-wide py-2 md:py-3 px-6 rounded-md shadow-md transition duration-300 text-lg [text-shadow:_0_1px_1px_rgba(0,0,0,0.2)]">
               See More
             </button>
           </div>

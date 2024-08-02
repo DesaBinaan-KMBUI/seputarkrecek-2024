@@ -21,7 +21,7 @@ export default function App({ Component, pageProps }: AppProps) {
           rel="stylesheet"
         />
       </Head>
-      <main className="bg-white min-h-screen">
+      <main className="bg-[#F6ECE3] text-black min-h-screen">
         <Navbar />
         <Analytics />
         <Component {...pageProps} />
