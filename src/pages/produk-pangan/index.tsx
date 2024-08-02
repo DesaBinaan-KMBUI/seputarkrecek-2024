@@ -136,7 +136,7 @@ const ProdukPangan = () => {
 
 
             <section className="grid grid-cols-1 md:grid-cols-2 my-10 md:my-6 font-clash w-full h-full">
-                <div className="text-lg px-4 md:px-10 py-20 bg-gradient-to-l from-lime-500 to-lime-700 text-white text-left">
+                <div className="text-lg px-4 md:px-10 py-16 md:py-20 bg-gradient-to-l from-lime-500 to-lime-700 text-white text-left">
                     <p>Produk Unggulan</p>
                     <h1 className="my-3 font-bold text-5xl">Kopi Kinasih</h1>
                     <p>Kopi Kinasih merupakan salah satu kopi robusta yang diolah langsung dari Dusun Krecek, Temanggung, Jawa Tengah. Dibuat dengan bijih kopi pilihan, cita rasa kopi kinasih pun bervariasi tergantung dari cara pengolahan biji kopi pasca panen. Ada yang mempunyai rasa yang cenderung manis dan seperti coklat, rasa yang agak asam seperti wine, rasa seperti buah beri ataupun kombinasi dari beberapa macam rasa yang seimbang.</p>
