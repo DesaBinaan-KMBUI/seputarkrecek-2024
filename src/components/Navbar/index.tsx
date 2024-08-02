@@ -60,7 +60,7 @@ const Navbar: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="px-4 md:px-12 py-2 md:py-5 flex xl:hidden items-center fixed w-full bg-white z-50">
+      <div className="px-4 md:px-12 md:py-5 flex xl:hidden items-center fixed w-full bg-white z-50">
         <div className="flex  w-full my-4">
           <div className="flex xl:hidden justify-center w-full items-center h-9 transition-all duration-500 ease-in-out">
             <Link href="/">
@@ -84,8 +84,8 @@ const Navbar: React.FC = () => {
           <div
             className={
               open
-                ? `navLink absolute transition-all duration-500 ease-in-out top-[5rem] bg-white opacity-100 left-0 w-screen h-screen px-6 py-[1.8rem]`
-                : ` navLink absolute  transition-all duration-500 ease-in-out top-[5rem] bg-white opacity-0 left-[100vw] w-screen h-screen px-6 py-[1.8rem]`
+                ? `navLink absolute transition-all duration-500 ease-in-out top-[4rem] bg-white opacity-100 left-0 w-screen h-screen px-6 py-[1.8rem]`
+                : ` navLink absolute  transition-all duration-500 ease-in-out top-[4rem] bg-white opacity-0 left-[100vw] w-screen h-screen px-6 py-[1.8rem]`
             }
           >
             <div className=" md:px-8 font-poppins font-normal text-2xl text-[#9CA3AF] flex flex-col gap-6">

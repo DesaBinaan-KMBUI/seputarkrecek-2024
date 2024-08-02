@@ -1,30 +1,30 @@
 import React, { useState } from "react";
 import dynamic from "next/dynamic";
 import { config } from "react-spring";
-import Image from "next/image";
-import { ChevronLeft, ChevronRight, Images } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import CarouselCard from "@/components/Carousel3D/card";
-
+import HeroProdukPangan from "@/components/ProdukPangan/Hero";
+import Image from "next/image";
+import Bottom from "@/components/ProdukPangan/Bottom";
 const Carousel = dynamic(() => import("@/components/Carousel3D"), {
     ssr: false,
 });
 
 const ProdukPangan = () => {
     const [goToSlide, setGoToSlide] = useState(0);
-    const images = ["/images/hero1.png"];
+
     const items = [
-        { name: "Keripik Kentang", image: "/images/Hero3.png", price: "Rp 50000" },
-        { name: "Keripik Kentang", image: "/images/Hero3.png", price: "Rp 50000" },
-        { name: "Keripik Kentang", image: "/images/Hero3.png", price: "Rp 50000" },
-        { name: "Keripik Kentang", image: "/images/Hero3.png", price: "Rp 50000" },
-        { name: "Keripik Kentang", image: "/images/Hero3.png", price: "Rp 50000" },
-        { name: "Keripik Kentang", image: "/images/Hero3.png", price: "Rp 50000" },
-        { name: "Keripik Kentang", image: "/images/Hero3.png", price: "Rp 50000" },
-        { name: "Keripik Kentang", image: "/images/Hero3.png", price: "Rp 50000" },
+        { name: "Gethuk", image: "/images/produk-pangan/umkm/Gethuk.jpg" },
+        { name: "Greenbean", image: "/images/produk-pangan/umkm/Greenbean.jpg" },
+        { name: "Gula Semut", image: "/images/produk-pangan/umkm/gulasemut.jpg" },
+        { name: "Keripik Singkong", image: "/images/produk-pangan/umkm/keripiksingkong.jpeg" },
+        { name: "Roastbean", image: "/images/produk-pangan/umkm/Roastbean.jpg" },
     ];
-    const totalSlides = 3;
+
+
+
+    const totalSlides = 6;
     const cardEachSide = Math.floor(totalSlides / 2);
-    console.log("cardEachSide", cardEachSide);
 
     const calculateRotation = (position: number) => {
         const distance = ((position - goToSlide) + totalSlides) % totalSlides;
@@ -32,70 +32,58 @@ const ProdukPangan = () => {
         return distance > cardEachSide ? -25 : 25;
     };
 
+    const dataCarousel = [
+        {
+            key: 0, image: "/images/produk-pangan/carousel/kopi.jpg", title: "Ceri Kopi Robusta", description:
+                "Komoditas unggulan Dusun Krecek yang dihasilkan melalui proses penanaman yang telaten dan terjaga, menghadirkan cita rasa yang istimewa"
+        },
+        {
+            key: 1, image: "/images/produk-pangan/carousel/cabe.jpg", title: "Cabe", description:
+                "Cabe segar dari Dusun Krecek, ideal untuk menambah rasa masakan sehari-hari dan membantu penduduk setempat"
+        },
+        {
+            key: 2, image: "/images/produk-pangan/carousel/jagung.jpg", title: "Jagung", description:
+                "Jagung dari Dusun Krecek, pilihan sehat untuk konsumsi harian sekaligus meningkatkan pendapatan warga"
+        },
+        {
+            key: 3, image: "/images/produk-pangan/carousel/timun.jpg", title: "Timun",
+            description: "Timun dari Dusun Krecek, ideal untuk salad segar dan mendukung komunitas lokal guna mendukung kebutuhan konsumsi sehari-hari warga sekaligus menambah penghasilan mereka"
+        },
+        {
+            key: 4, image: "/images/produk-pangan/carousel/pare.jpg", title: "Pare",
+            description: "Pare dari Dusun Krecek, sayuran yang berguna untuk berbagai hidangan dan mendukung ekonomi lokal"
+        },
+        {
+            key: 5, image: "/images/produk-pangan/carousel/manggis.jpg", title: "Manggis",
+            description: "Manggis dari Dusun Krecek, buah manis yang bermanfaat untuk konsumsi sehari-hari dan memberikan kontribusi pada perekonomian warga"
+        },
+    ]
+
     const slides = Array.from({ length: totalSlides }, (_, index) => ({
         key: index,
         content: (
             <CarouselCard
                 first={index === goToSlide}
                 rotation={calculateRotation(index)}
+                imageUrl={dataCarousel[index].image}
             />
         ),
     }));
 
-    function swipeLeft() {
-        if (goToSlide > 0) {
-            setGoToSlide(goToSlide - 1);
-        } else {
-            setGoToSlide(totalSlides - 1);
-        }
-    }
 
-    function swipeRight() {
-        if (goToSlide + 1 < totalSlides) {
-            setGoToSlide(goToSlide + 1);
-        } else {
-            setGoToSlide(0);
-        }
-    }
+    const swipeLeft = () => {
+        setGoToSlide((goToSlide - 1 + totalSlides) % totalSlides);
+    };
+
+    const swipeRight = () => {
+        setGoToSlide((goToSlide + 1) % totalSlides);
+    };
 
     return (
-        <div className="flex min-h-screen flex-col items-center">
-            <section className="relative w-screen h-screen overflow-hidden">
-                <div className="relative w-full h-full overflow-hidden">
-                    <div className="slide w-full h-full flex">
-                        <div className="w-full h-full flex-shrink-0 relative">
-                            <Image
-                                src={images[0]}
-                                alt={"Hero Image"}
-                                layout="fill"
-                                objectFit="cover"
-                                priority
-                            />
-                        </div>
-                    </div>
+        <div className="flex min-h-screen flex-col ">
+            <HeroProdukPangan />
 
-                    <div className="absolute top-1/2 -translate-y-1/2 inset-0 flex flex-col justify-center items-start ml-4 md:p-8 md:ml-14 md:mt-8">
-                        <div className="relative px-10 py-4 rounded-lg max-w-2xl bg-gradient-to-r backdrop-blur-sm">
-                            <h1 className="font-semibold text-[32px] md:text-[55px] mt-16 text-white mb-4 drop-shadow-lg font-clash [text-shadow:_0px_1px_2px_rgba(0,0,0,0.9)]">
-                                Komoditas Pangan & Produk UMKM Dusun Krecek
-                            </h1>
-
-                            <p className="text-gray-200 w-[90%] md:w-full text-xl tracking-wide font-semibold mb-6 [text-shadow:_1px_1px_3px_rgba(0,0,0,0.9)] text-justify">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                nisi ut aliquip ex ea commodo consequat.
-                            </p>
-
-                            <button className="bg-[#84b230] hover:bg-[#658e22] text-white font-semibold tracking-wide py-2 md:py-3 px-6 rounded-md shadow-md transition duration-300 text-lg [text-shadow:_0_1px_1px_rgba(0,0,0,0.2)]">
-                                See More
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="flex flex-col gap-y-52  min-h-5xl my-10 md:my-16 justify-center items-center text-center">
+            <section className="flex flex-col gap-y-52 min-h-5xl my-10 md:my-16 justify-center items-center text-center">
                 <div className="mb-14 md:mb-28 px-4">
                     <h1 className="text-[40px] md:text-[80px] font-clash text-deep-cove-900 font-semibold">
                         Komoditas Pangan
@@ -104,112 +92,75 @@ const ProdukPangan = () => {
                         Dusun Krecek
                     </h1>
                 </div>
-                <div className="flex justify-center bg-red-300 px-4 w-3/4 mb-14 md:mb-28 ">
-                    <button
-                        className=" absolute left-3 md:left-4 xl:left-44 bg-gray-200 bg-opacity-30 p-2 rounded-full flex items-center justify-center border border-black hover:bg-opacity-50 transition-opacity"
-                        onClick={swipeLeft}
-                    >
-                        <ChevronLeft />
-                    </button>
-                    <div className=" w-full md:w-5/6 xl:w-3/4 ">
-                        <Carousel
-                            slides={slides}
-                            goToSlide={goToSlide}
-                            offsetRadius={2}
-                            showNavigation={false}
-                            animationConfig={config.gentle}
-                            goToSlideDelay={100}
-                        />
-                    </div>
 
-                    <button
-                        className=" absolute right-3 md:right-4 xl:right-44 bg-gray-200 bg-opacity-30 p-2 rounded-full flex items-center justify-center border border-black hover:bg-opacity-50 transition-opacity"
-                        onClick={swipeRight}
-                    >
-                        <ChevronRight />
-                    </button>
+                <div className="relative flex justify-center w-full  mb-14 md:mb-28">
+                    <div className="flex flex-row justify-between px-2 md:px-4 w-full md:w-[80%]">
+
+                        <button
+                            className=" z-20  bg-gray-200 bg-opacity-30 p-2 rounded-full flex items-center justify-center border border-black hover:bg-opacity-50 transition-opacity"
+                            onClick={swipeLeft}
+                        >
+                            <ChevronLeft />
+                        </button>
+                        <div className=" w-full md:w-5/6 xl:w-[70%] ">
+                            <Carousel
+                                slides={slides}
+                                goToSlide={goToSlide}
+                                offsetRadius={2}
+                                showNavigation={false}
+                                animationConfig={config.gentle}
+                                goToSlideDelay={100}
+                            />
+                        </div>
+
+                        <button
+                            className="z-20  bg-gray-200 bg-opacity-30 p-2 rounded-full flex items-center justify-center border border-black hover:bg-opacity-50 transition-opacity"
+                            onClick={swipeRight}
+                        >
+                            <ChevronRight />
+                        </button>
+
+
+                    </div>
                 </div>
-                <div className="flex justify-center flex-col  items-center">
+
+                <div className="flex w-full justify-center flex-col items-center">
                     <h1 className="text-[40px] md:text-[80px] font-clash text-deep-cove-900 font-semibold">
-                        Lorem Ipsum
+                        {dataCarousel[goToSlide].title}
                     </h1>
                     <h1 className="w-[80%] md:w-[66%] text-[24px] font-dm text-deep-cove-900 font-normal text-center">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat.
+                        {dataCarousel[goToSlide].description}
                     </h1>
                 </div>
             </section>
 
-            <section className="grid grid-cols-1 md:grid-cols-2 my-10 md:my-6  font-clash w-full h-full">
-                <div className="text-lg px-10 py-20 bg-gradient-to-l from-lime-500 to-lime-700 text-white text-left">
-                    LOREM IPSUM
+
+            <section className="grid grid-cols-1 md:grid-cols-2 my-10 md:my-6 font-clash w-full h-full">
+                <div className="text-lg px-4 md:px-10 py-20 bg-gradient-to-l from-lime-500 to-lime-700 text-white text-left">
+                    <p>Produk Unggulan</p>
                     <h1 className="my-3 font-bold text-5xl">Kopi Kinasih</h1>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.
+                    <p>Kopi Kinasih merupakan salah satu kopi robusta yang diolah langsung dari Dusun Krecek, Temanggung, Jawa Tengah. Dibuat dengan bijih kopi pilihan, cita rasa kopi kinasih pun bervariasi tergantung dari cara pengolahan biji kopi pasca panen. Ada yang mempunyai rasa yang cenderung manis dan seperti coklat, rasa yang agak asam seperti wine, rasa seperti buah beri ataupun kombinasi dari beberapa macam rasa yang seimbang.</p>
+                    <p className="pt-4 font-bold">Pricelist:</p>
+                    <ul>
+                        <li>Kopi bubuk - 150gr</li>
+                        <li>Varian kopi bubuk yang tersedia antara lain:</li>
+                        <li>Honey → 30k</li>
+                        <li>Natural → 27k</li>
+                        <li>Natural Lanang → 34k</li>
+                        <li>Wine → 37k</li>
+                    </ul>
                 </div>
-                <div className="bg-gradient-to-tr from-lime-500 via-lime-300 to-lime-100">
-                    <img
-                        className="h-full w-full object-cover"
-                        src="/images/Hero3.png"
-                        alt="kopi"
-                    />
-                </div>
-            </section>
-
-            <section className="flex relative overflow-hidden flex-col mt-20 md:mt-4 pb-20 w-full items-center text-center ">
-                <div className="mb-14 md:mb-20 px-4">
-                    <h1 className="text-[40px] md:text-[80px] font-clash text-deep-cove-900 font-semibold">
-                        UMKM Dusun Krecek
-                    </h1>
-                </div>
-
-                <div className="flex z-40">
-                    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-16">
-                        {items.map((item, index) => (
-                            <div
-                                key={index}
-                                className="flex flex-col w-[280px] gradient-border rounded-xl bg-white"
-                            >
-                                <div className="flex gap-4 py-8 px-8 w-full flex-col">
-                                    <div className="relative w-full h-[200px]">
-                                        <Image
-                                            src={item.image}
-                                            alt={item.name}
-                                            layout="fill"
-                                            objectFit="cover"
-                                            priority
-                                        />
-                                    </div>
-
-                                    <div className="font-clash text-deep-cove-900 font-semibold text-left">
-                                        <h1 className="leading-[30px]">{item.name}</h1>
-                                        <h1 className="leading-[30px]">{item.price}</h1>
-                                    </div>
-
-                                    <button className="bg-conifer-600 px-10 py-2 text-white font-dm font-semibold rounded-lg">
-                                        Beli
-                                    </button>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-
-                <div className="absolute bottom-[-50px] md:bottom-[-70px] xl:bottom-[-150px] left-0 w-full">
+                <div className="relative w-full h-64 md:h-full bg-gradient-to-tr from-lime-500 via-lime-300 to-lime-100">
                     <Image
-                        src="/wavy.svg"
-                        alt="hero"
-                        layout="responsive"
-                        width={1000}
-                        height={300}
-                        className="object-cover"
+                        src="/images/produk-pangan/kopi-kinasih.png"
+                        alt="Kopi Kinasih"
+                        layout="fill"
+                        objectFit="cover"
                     />
                 </div>
             </section>
+
+            <Bottom items={items} />
 
 
         </div>

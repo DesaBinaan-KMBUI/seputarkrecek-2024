@@ -37,3 +37,25 @@ html {
   background-clip: content-box, border-box;
 }
 
+.carousel-container {
+  position: relative;
+  width: 100%; /* Ensure the width is consistent */
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.arrow-left {
+  left: 10px;
+}
+
+.arrow-right {
+  right: 10px;
+}
