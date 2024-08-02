@@ -1,4 +1,4 @@
-const CarouselCard = ({ first, rotation }: { first: boolean; rotation: number }) => {
+const CarouselCard = ({ first, rotation,imageUrl }: { first: boolean; rotation: number,imageUrl:string }) => {
     const rotationStyle = {
         transform: `rotate(${rotation}deg)`,
         transition: 'transform 0.3s ease',
@@ -15,7 +15,7 @@ const CarouselCard = ({ first, rotation }: { first: boolean; rotation: number })
             style={rotationStyle}
         >
             <img
-                src={first ? "/images/produk-pangan/kopi-kinasih.png" : "/images/produk-pangan/kopi-kinasih.png"}
+                src={imageUrl}
                 alt="carousel"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '60px' }}
             />
