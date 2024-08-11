@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-
 const Hero: React.FC = () => {
   const images = [
     "/images/Hero1.jpg",
@@ -18,7 +17,6 @@ const Hero: React.FC = () => {
   const [transitionStyle, setTransitionStyle] = useState("transform 0.5s ease");
   const [isTransitioning, setIsTransitioning] = useState(false);
 
-  
   const moveHandler = (direction: string) => {
     if (isTransitioning) return;
     setIsTransitioning(true);
@@ -64,7 +62,7 @@ const Hero: React.FC = () => {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [extendedImages.length, isTransitioning]);
 
   return (
     <div className="relative w-screen h-screen overflow-hidden">
@@ -100,7 +98,10 @@ const Hero: React.FC = () => {
               Mari jelajahi kekayaan budaya Dusun Krecek dan rasakan kehangatan
               komunitas kami!
             </p>
-            <button onClick={scrollToTarget} className="bg-[#A17858] hover:bg-[#2F2014] text-white font-semibold tracking-wide py-2 md:py-3 px-6 rounded-md shadow-md transition duration-300 text-lg [text-shadow:_0_1px_1px_rgba(0,0,0,0.2)]">
+            <button
+              onClick={scrollToTarget}
+              className="bg-[#A17858] hover:bg-[#2F2014] text-white font-semibold tracking-wide py-2 md:py-3 px-6 rounded-md shadow-md transition duration-300 text-lg [text-shadow:_0_1px_1px_rgba(0,0,0,0.2)]"
+            >
               See More
             </button>
           </div>

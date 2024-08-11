@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -12,6 +12,11 @@
 
 .separator {
   clip-path: polygon(0 12.5%, 100% 0, 100% 100%, 0% 100%);
+  z-index: 0;
+}
+
+.separator-2 {
+  clip-path: polygon(0 3.125%, 100% 0, 100% 100%, 0% 100%);
   z-index: 0;
 }
 
@@ -32,16 +37,16 @@ html {
 
 .gradient-border {
   border: 2px solid transparent;
-  background-image: linear-gradient(white, white), linear-gradient(to bottom, #A17858 47%, #2F2014 100%);
+  background-image: linear-gradient(white, white),
+    linear-gradient(to bottom, #a17858 47%, #2f2014 100%);
   background-origin: border-box;
   background-clip: content-box, border-box;
 }
 
-.gradient-background{
-  background-image: linear-gradient(to left, #A17858 47%, #2F2014 100%);
+.gradient-background {
+  background-image: linear-gradient(to left, #a17858 47%, #2f2014 100%);
 }
 
-.gradient-background-2{
-  background-image: linear-gradient(to left, #8D804F 100%, #F6ECE3 47%);
+.gradient-background-2 {
+  background-image: linear-gradient(to left, #8d804f 100%, #f6ece3 47%);
 }
-

@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
     { id: 1, href: "/", name: "Home" },
     { id: 2, href: "/produk-pangan", name: "Produk & Pangan" },
     { id: 3, href: "/pariwisata-sejarah", name: "Pariwisata & Sejarah" },
-    { id: 4, href: "/desbin-kmbui", name: "Desa Binaan KMBUI" },
+    { id: 4, href: "/desbin", name: "Desa Binaan KMBUI" },
   ];
 
   const router = useRouter();
@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
         <div className="flex flex-row justify-evenly w-full my-4">
           <Link href="">
             <Image
-              src="/logo.svg"
+              src="/images/logo.png"
               alt="logo"
               className="cursor-pointer"
               width={180}

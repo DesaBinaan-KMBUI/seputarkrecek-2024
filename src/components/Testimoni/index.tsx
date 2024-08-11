@@ -1,6 +1,5 @@
 import React from "react";
 import TestimoniCard from "./card";
-import styles from "./separator.module.css";
 
 const Testimoni: React.FC = () => {
   return (
@@ -31,7 +30,6 @@ const Testimoni: React.FC = () => {
 
               Sebenarnya, begitu tiba di Krecek di hari pertama, aku sempat berpikir gimana caranya untuk ngelewatin 1 minggu ini, apakah akan terasa bosan. The answer is not at all! Ibaratnya, Dusun Krecek itu kayak rumah, terus rumah-rumah warga itu kayak ruangan-ruangan di dalam rumah yang bebas kamu singgahi kapanpun karena memang seleluasa itu. Kita baru duduk di sofa beberapa detik aja, mereka bakal langsung nyuguhin makanan dan minuman, kalau nggak kunjung disantap, siap-siap ditawarin terus. Bahkan, waktu handphone ku pernah hampir hilang, literally satu warga bantu cariin. Suasananya sehangat itu! Minim internet, penuh interaksi, dan lebih "menyadari" waktu yang berjalan dan lingkungan sekitar.`}
             />
-
 
             <TestimoniCard
               imageSrc="/images/img.png"
@@ -64,12 +62,10 @@ Krecek has a lot of potential, dan karena kita sudah disambut hangat oleh wargan
 
               `}
             />
-
           </div>
 
           {/* Right */}
           <div className="flex flex-col gap-10 pt-10 md:pt-36 md:w-1/2">
-
             <TestimoniCard
               imageSrc="/images/img.png"
               rating={5}
@@ -91,7 +87,6 @@ Krecek has a lot of potential, dan karena kita sudah disambut hangat oleh wargan
               `}
             />
 
-
             <TestimoniCard
               imageSrc="/images/img.png"
               rating={5}
@@ -103,28 +98,26 @@ Krecek has a lot of potential, dan karena kita sudah disambut hangat oleh wargan
 
               `}
             />
-
-
-
           </div>
         </div>
 
         <div className="relative mt-10 pt-40 z-0 flex justify-center gap-20 px-12 md:px-24 pb-28 gradient-background items-center separator">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-
             <div className="text-white">
               <h1 className="font-semibold font-clash text-[40px] md:text-[80px] leading-tight md:leading-[89.60px]">
                 Tertarik ke Dusun Krecek?
               </h1>
               <p className="text-md sm:text-lg md:text-xl mt-3 font-dm tracking-wide">
-                Yuk, rencanakan kegiatan retreat Anda di Dusun Krecek, Kaloran, Temanggung, Jawa Tengah! Hubungi warga setempat melalui contact person yang tertera dan rasakan pengalaman yang tak terlupakan.
+                Yuk, rencanakan kegiatan retreat Anda di Dusun Krecek, Kaloran,
+                Temanggung, Jawa Tengah! Hubungi warga setempat melalui contact
+                person yang tertera dan rasakan pengalaman yang tak terlupakan.
               </p>
               <p className="pt-4">
-                Contact Person:<br />
+                Contact Person:
+                <br />
                 (+62) 87776073898
               </p>
             </div>
-
 
             <iframe
               title="map"
