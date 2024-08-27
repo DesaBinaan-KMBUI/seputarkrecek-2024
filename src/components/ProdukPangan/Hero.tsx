@@ -28,9 +28,9 @@ const HeroProdukPangan = () => {
                     </h1>
 
                     <p className="text-gray-200 w-[90%] md:w-full text-xl tracking-wide font-semibold mb-6 [text-shadow:_1px_1px_3px_rgba(0,0,0,0.9)] text-justify">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        enim ad minim veniam, quis nostrud exercitaLtion ullamco laboris
                         nisi ut aliquip ex ea commodo consequat.
                     </p>
 

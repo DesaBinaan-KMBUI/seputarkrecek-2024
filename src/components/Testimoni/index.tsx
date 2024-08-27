@@ -113,10 +113,11 @@ Krecek has a lot of potential, dan karena kita sudah disambut hangat oleh wargan
                 person yang tertera dan rasakan pengalaman yang tak terlupakan.
               </p>
               <p className="pt-4">
-                Contact Person:
-                <br />
-                (+62) 87776073898
+              Contact Person:
+              
               </p>
+              <p>(+62) 87776073898</p>
+
             </div>
 
             <iframe

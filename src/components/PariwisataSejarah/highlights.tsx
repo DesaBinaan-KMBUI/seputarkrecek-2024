@@ -20,16 +20,16 @@ export default function Highlights() {
 
                     {description[0].description}
                 </div>
-                <div className="relative mb-5 md:mb-0 h-full">
+                <div className="relative mb-5 md:mb-0 h-[300px] md:h-[400px]">
                     <img
-                        className="absolute inset-0 w-full h-full object-cover"
+                        className="w-full h-full object-cover"
                         src="/images/pariwisata-sejarah/highlights/Curug.jpg"
                         alt="curug" />
                 </div>
 
-                <div className="relative h-full">
+                <div className="relative h-[300px] md:h-[400px]">
                     <img
-                        className="absolute inset-0 w-full h-full object-cover"
+                        className="w-full h-full object-cover"
                         src="/images/pariwisata-sejarah/highlights/Vihara.JPG"
                         alt="vihara" />
                 </div>
@@ -52,16 +52,16 @@ export default function Highlights() {
 
                     {description[2].description}
                 </div>
-                <div className="relative mb-5 md:mb-0 h-full">
+                <div className="relative mb-5 md:mb-0 h-[300px] md:h-[400px]">
                     <img
-                        className="absolute inset-0 w-full h-full object-cover"
+                        className="w-full h-full object-cover"
                         src="/images/pariwisata-sejarah/highlights/Kuda-Lumping.jpg"
                         alt="kuda-lumping" />
                 </div>
 
-                <div className="relative h-full">
+                <div className="relative h-[300px] md:h-[400px]">
                     <img
-                        className="absolute inset-0 w-full h-full object-cover"
+                        className="w-full h-full object-cover"
                         src="/images/pariwisata-sejarah/highlights/Horotoyo.JPG"
                         alt="tarian-horotoyo" />
                 </div>

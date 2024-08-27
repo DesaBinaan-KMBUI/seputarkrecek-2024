@@ -119,7 +119,7 @@ const Hero: React.FC = () => {
           <ChevronRight />
         </button>
 
-        <div className="absolute bottom-2 md:bottom-8 w-full flex justify-center space-x-5">
+        <div className="absolute bottom-24 md:bottom-12 w-full flex justify-center space-x-5">
           {images.map((_, index) => (
             <button
               key={index}
