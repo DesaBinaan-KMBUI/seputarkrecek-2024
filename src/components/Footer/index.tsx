@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
                                     <div className="flex items-center justify-center w-6 h-6">
                                         <IoLogoWhatsapp size={24} />
                                     </div>
-                                    <span>(+62) 87776073898</span>
+                                    <span>(+62) 82133400212</span>
                                 </a>
                             </li>
                         </ul>

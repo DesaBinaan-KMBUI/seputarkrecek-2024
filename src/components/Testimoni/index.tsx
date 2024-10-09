@@ -12,17 +12,7 @@ const Testimoni: React.FC = () => {
         <div className="relative z-10 flex flex-col md:flex-row md:gap-10 px-10 md:px-24 pt-12 mb-[-130px]">
           <div className="flex flex-col gap-10 md:w-1/2">
             <TestimoniCard
-              imageSrc="/images/img.png"
-              rating={5}
-              name="Alexander Kevin Yang"
-              institution="Universitas Indonesia"
-              testimonial={`Awalnya ga pernah ada niat buat ikutan Desbin 2023 sama sekali. Bahkan baru tau ada proker Desbin aja di 2023, tahun sebelumnya ga pernah merhatiin ini acara apa. Waktu berangkat juga ga ada ekspektasi apa-apa karena udah biasa tinggal di desa begini karena memang sama-sama asal dari Jawa Tengah. Tapi waktu di Krecek ternyata beda banget karena di dusun ini semuanya Buddhis yang bikin unik. Tempatnya pun bagus dan dingin, dusunnya pun punya vihara dan bahkan pondok meditasi di atas bukit yang deket dengan curug. 
-              
-              So far, pengalaman di Desbin 2023 cukup memuaskan sehingga pengen balik lagi. Acara yang dibuat panitia juga seru dan bikin bisa berinteraksi dengan warga. Kita juga dikenalin sama budaya Buddhis-Jawa yang baru pertama kali dirasain. Overall Desbin sangat OK punya buat didatengin lagi.`}
-            />
-
-            <TestimoniCard
-              imageSrc="/images/img.png"
+              imageSrc="/images/people/marvella.png"
               rating={5}
               name="Marvella Metta Sutioso"
               institution="Universitas Indonesia"
@@ -32,7 +22,7 @@ const Testimoni: React.FC = () => {
             />
 
             <TestimoniCard
-              imageSrc="/images/img.png"
+              imageSrc="/images/people/Bodhi.png"
               rating={5}
               name="Lim Bodhi Wijaya "
               institution="Universitas Indonesia"
@@ -40,7 +30,7 @@ const Testimoni: React.FC = () => {
             />
 
             <TestimoniCard
-              imageSrc="/images/img.png"
+              imageSrc="/images/people/Lilianna.png"
               rating={5}
               name="Lillianna Ricarda Mettasari"
               institution="Universitas Indonesia"
@@ -51,7 +41,7 @@ const Testimoni: React.FC = () => {
             />
 
             <TestimoniCard
-              imageSrc="/images/img.png"
+              imageSrc="/images/people/Caryn.jpg"
               rating={5}
               name="Caryn Hanuga"
               institution="Universitas Indonesia"
@@ -67,7 +57,7 @@ Krecek has a lot of potential, dan karena kita sudah disambut hangat oleh wargan
           {/* Right */}
           <div className="flex flex-col gap-10 pt-10 md:pt-36 md:w-1/2">
             <TestimoniCard
-              imageSrc="/images/img.png"
+              imageSrc="/images/people/Shinta.jpg"
               rating={5}
               name="Shinta Chandra"
               institution="Universitas Indonesia"
@@ -77,7 +67,7 @@ Krecek has a lot of potential, dan karena kita sudah disambut hangat oleh wargan
             />
 
             <TestimoniCard
-              imageSrc="/images/img.png"
+              imageSrc="/images/people/Edi.jpg"
               rating={5}
               name="Edi Lienardy"
               institution="Universitas Indonesia"
@@ -88,7 +78,7 @@ Krecek has a lot of potential, dan karena kita sudah disambut hangat oleh wargan
             />
 
             <TestimoniCard
-              imageSrc="/images/img.png"
+              imageSrc="/images/people/Agnes.png"
               rating={5}
               name="Agnes Betresia"
               institution="Universitas Indonesia"
@@ -116,7 +106,7 @@ Krecek has a lot of potential, dan karena kita sudah disambut hangat oleh wargan
               Contact Person:
               
               </p>
-              <p>(+62) 87776073898</p>
+              <p>(+62) 82133400212</p>
 
             </div>
 

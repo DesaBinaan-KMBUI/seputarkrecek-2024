@@ -25,15 +25,17 @@ const TestimoniCard: React.FC<TestimoniCardProps> = ({
   ));
 
   return (
-    <div className="relative w-full h-60">
-      <Image
-        src={imageSrc}
-        alt={name}
-        layout="fill"
-        objectFit="cover"
-        className="w-full h-full"
-      />
-      <div className="absolute right-0 top-0 ml-[250px] h-60 overflow-auto flex flex-col text-white p-6 bg-black/50 shadow-lg">
+    <div className="flex w-full h-80">
+      <div className="relative w-1/2 md:w-[50%] xl:w-1/3 h-full p-4">
+        <Image
+          src={imageSrc}
+          alt={name}
+          layout="fill"
+          objectFit="cover"
+          className="rounded-l-lg h-full w-full"
+        />
+      </div>
+      <div className="relative w-1/2 md:w-[80%] xl:w-2/3 h-full overflow-y-scroll flex flex-col text-white p-6 bg-black bg-opacity-90 backdrop-blur-lg shadow-lg">
         <div className="flex flex-row gap-1 justify-end mb-1 md:mb-4">
           <Image
             src="/images/star.svg"
