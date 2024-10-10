@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
           <div className="flex xl:hidden justify-center w-full items-center h-9 transition-all duration-500 ease-in-out">
             <Link href="/">
               <Image
-                src="/logo.svg"
+                src="/images/logo.png"
                 alt="logo"
                 className="cursor-pointer"
                 width={200}
