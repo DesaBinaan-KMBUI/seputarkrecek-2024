@@ -11,7 +11,6 @@ const Navbar: React.FC = () => {
     { id: 1, href: "/", name: "Home" },
     { id: 2, href: "/produk-pangan", name: "Produk & Pangan" },
     { id: 3, href: "/pariwisata-sejarah", name: "Pariwisata & Sejarah" },
-    { id: 4, href: "/desbin", name: "Desa Binaan KMBUI" },
   ];
 
   const router = useRouter();

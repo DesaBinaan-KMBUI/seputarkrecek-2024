@@ -28,6 +28,20 @@ const Footer: React.FC = () => {
                                     <span>(+62) 82133400212</span>
                                 </a>
                             </li>
+                            <li className="flex items-center space-x-2">
+                                <a href="/desbin" className="flex items-center space-x-2">
+                                    <div className="flex items-center justify-center w-6 h-6">
+                                        <Image
+                                            src="/images/desbin.png"
+                                            alt="logo"
+                                            className="cursor-pointer"
+                                            width={180}
+                                            height={64}
+                                        />
+                                    </div>
+                                    <span>Desa Binaan KMBUI</span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <div className="col-span-1">
