@@ -16,8 +16,8 @@ export default function PariwisataSejarahHero() {
               <Image
                 src={images}
                 alt={`pariwisata-sejarah`}
-                layout="fill"
-                objectFit="cover"
+                fill
+                style={{ objectFit: 'cover' }}
                 priority
               />
             </div>

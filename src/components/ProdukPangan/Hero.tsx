@@ -14,8 +14,8 @@ const HeroProdukPangan = () => {
             <Image
               src="/images/produk-pangan/Hero.jpg"
               alt={"Hero Image"}
-              layout="fill"
-              objectFit="cover"
+              fill
+              style={{ objectFit: 'cover' }}
               priority
             />
           </div>

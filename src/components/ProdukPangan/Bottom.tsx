@@ -22,8 +22,8 @@ const Bottom = ({ items }: { items: CardProps[] }) => {
                                     <Image
                                         src={item.image}
                                         alt={item.name}
-                                        layout="fill"
-                                        objectFit="cover"
+                                        fill
+                                        style={{ objectFit: 'cover' }}
                                         priority
                                     />
                                 </div>

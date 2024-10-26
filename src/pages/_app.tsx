@@ -16,10 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
-        <link
-          href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap"
-          rel="stylesheet"
-        />
+      
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.seputarkrecek.com" />

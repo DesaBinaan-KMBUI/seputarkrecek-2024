@@ -30,8 +30,9 @@ const TestimoniCard: React.FC<TestimoniCardProps> = ({
         <Image
           src={imageSrc}
           alt={name}
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{ objectFit: 'cover' }}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="rounded-l-lg h-full w-full"
         />
       </div>
@@ -40,7 +41,7 @@ const TestimoniCard: React.FC<TestimoniCardProps> = ({
           <Image
             src="/images/star.svg"
             alt={name}
-            objectFit="cover"
+            style={{ objectFit: 'cover' }}
             height={13}
             width={13}
           />

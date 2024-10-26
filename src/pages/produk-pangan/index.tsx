@@ -154,8 +154,8 @@ const ProdukPangan = () => {
                     <Image
                         src="/images/produk-pangan/kopi-kinasih.png"
                         alt="Kopi Kinasih"
-                        layout="fill"
-                        objectFit="cover"
+                        fill
+                        style={{ objectFit: 'cover' }}
                     />
                 </div>
             </section>

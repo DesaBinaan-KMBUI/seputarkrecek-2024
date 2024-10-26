@@ -80,8 +80,8 @@ const Hero: React.FC = () => {
               <Image
                 src={image}
                 alt={`Slide ${index + 1}`}
-                layout="fill"
-                objectFit="cover"
+                fill
+                style={{ objectFit: 'cover' }}
                 priority
               />
             </div>
