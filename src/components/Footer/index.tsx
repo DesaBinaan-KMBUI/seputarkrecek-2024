@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
                         <h2 className="font-bold text-lg text-[#8D804F]">Contact Person</h2>
                         <ul className="mt-4 space-y-2 text-[#8D804F]">
                             <li className="flex items-center space-x-2">
-                                <a href="https://wa.me/6287776073898" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2">
+                                <a href="https://wa.me/6282133400212" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2">
                                     <div className="flex items-center justify-center w-6 h-6">
                                         <IoLogoWhatsapp size={24} />
                                     </div>

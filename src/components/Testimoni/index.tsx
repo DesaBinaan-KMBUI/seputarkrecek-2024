@@ -12,7 +12,7 @@ const Testimoni: React.FC = () => {
         <div className="relative z-10 flex flex-col md:flex-row md:gap-10 px-10 md:px-24 pt-12 mb-[-130px]">
           <div className="flex flex-col gap-10 md:w-1/2">
             <TestimoniCard
-              imageSrc="/images/people/marvella.png"
+              imageSrc="/images/people/Marvella.png"
               rating={5}
               name="Marvella Metta Sutioso"
               institution="Universitas Indonesia"
