@@ -33,7 +33,7 @@ const Bottom = ({ items }: { items: CardProps[] }) => {
                                 </div>
 
                                 <a
-                                    href="https://wa.me/682133400212"
+                                    href="https://wa.me/6282133400212"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="bg-[#2F2014] px-10 py-2 text-white font-dm font-semibold rounded-lg text-center"
